@@ -17,7 +17,7 @@ login_btn.addEventListener('click', function () {
 
     firebase.auth().signInWithEmailAndPassword(user.email, user.pwd)
         .then((u) => {
-            console.log(u.user.uid);
+            
             // 取得登入當下的時間
             let date = new Date();
             let now = date.getTime();
